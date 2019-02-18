@@ -11,6 +11,8 @@ I trace the "total_count" in PairwiseStitching.cpp, the exception usually happen
 total count 26xxx, 52xxx, 79xxx, ... (xxx means some number)
 For example, 26367, 26369, 26373, 52693, 52699, 79070, 105413, 105416
 
+There was no error when I didn't use the "sampling" for registration. (comment out line 74-76 in ImageRegistrationMethodTranslation.cxx)
+
 ## Other Notes
 - The ITK version I'm using is 4.12.2. I've tried update to 4.13.1 and 5.0beta3, which didn't help
 - The compiler I use is Visual Studio 2017 version 15.7.3
