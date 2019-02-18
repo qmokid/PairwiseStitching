@@ -1,0 +1,6 @@
+#ifndef __REDUNDANTFRAMEFINDERBYSTITCHING_H
+#define __REDUNDANTFRAMEFINDERBYSTITCHING_H
+
+void PairwiseStitching();
+
+#endif
