@@ -17,7 +17,11 @@ mutex mutex_;
 //!
 void PairwiseStitching()
 {
+#if ITK_VERSION_MAJOR < 5
     itk::MultiThreader::SetGlobalMaximumNumberOfThreads(1);
+#else
+	itk::MultiThreaderBase::SetGlobalMaximumNumberOfThreads(1);
+#endif
 
     typedef itk::FileOutputWindow myFileOutputWindow;
     myFileOutputWindow::Pointer window = myFileOutputWindow::New();
